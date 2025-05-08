@@ -1,0 +1,19 @@
+[project]
+name = "finn-python-server"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "anacnoda77",email = "sm1108shin@naver.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+]
+
+[tool.poetry]
+packages = [{include = "finn_python_server", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
