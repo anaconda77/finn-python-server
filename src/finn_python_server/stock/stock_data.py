@@ -18,16 +18,11 @@ def get_stock_datas():
     
     # 핵심 부분: 주가 데이터 받아오는 코드
     tsla_prices = client.get_dataframe('TSLA',
-                                     startDate='2023-01-01',
-                                     endDate='2023-12-31',
+                                     startDate='2025-01-01',
+                                     endDate='2025-05-09',
                                      frequency='daily')
     
     # column명 없이 받아오려면 뒤에 header=False 추가
     tsla_prices.to_csv('~/Downloads/tsla_prices.csv')
-    
-    
-    
-    
-
     
     
