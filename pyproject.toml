@@ -15,7 +15,9 @@ dependencies = [
     "feedparser (>=6.0.11,<7.0.0)",
     "webdriver-manager (>=4.0.2,<5.0.0)",
     "beautifulsoup4 (>=4.13.4,<5.0.0)",
-    "selenium (>=4.32.0,<5.0.0)"
+    "selenium (>=4.32.0,<5.0.0)",
+    "transformers (>=4.51.3,<5.0.0)",
+    "torch (>=2.7.0,<3.0.0)"
 ]
 
 [tool.poetry]
@@ -25,6 +27,7 @@ packages = [{include = "finn_python_server", from = "src"}]
 [tool.poetry.group.dev.dependencies]
 black = "^25.1.0"
 flake8 = "^7.2.0"
+ipykernel = "^6.29.5"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
